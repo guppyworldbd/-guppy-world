@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#102b2a" />
+  <meta name="description" content="Guppy World — home-raised guppies in Bashundhara R/A, Dhaka. Browse our fish and enquire about availability." />
+  <title>Guppy World | Home-raised Guppies</title>
+  <style>
+    :root{--ink:#102b2a;--muted:#637775;--cream:#f6f5ef;--paper:#fffefa;--green:#a8c9a5;--lime:#d8e8b5;--line:#e5e9df;--accent:#e6a65c;--shadow:0 18px 50px rgba(16,43,42,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:-.04em;font-size:1.2rem}.mark{width:39px;height:39px;border-radius:14px;background:var(--ink);display:grid;place-items:center;color:var(--lime);font-size:21px}.navlinks{display:flex;align-items:center;gap:27px;color:#526562;font-size:.92rem}.navlinks a:hover{color:var(--ink)}.navcta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 19px;background:var(--ink);color:white;font-weight:700;cursor:pointer;transition:.2s}.navcta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px #102b2a22}.menu{display:none;background:none;border:0;font-size:25px;color:var(--ink)}
+    .hero{padding:44px 0 76px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:#52745c;font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.dot{width:8px;height:8px;border-radius:50%;background:#83a982}.hero h1{font-size:clamp(3.2rem,7vw,5.8rem);line-height:.98;letter-spacing:-.075em;margin:20px 0 22px;max-width:620px}.hero h1 em{font-family:Georgia,serif;font-weight:500;color:#6d9874}.lead{font-size:1.1rem;color:var(--muted);max-width:490px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn.secondary{background:transparent;color:var(--ink);border:1px solid #bdcbc0}.hero-note{font-size:.82rem;color:#788783;margin-top:20px}.visual{min-height:465px;border-radius:32px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 72% 25%,#d8e8b5 0,transparent 32%),radial-gradient(ellipse at 18% 85%,#588b70 0,transparent 42%),linear-gradient(145deg,#183d3a,#0c2527 75%);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}.visual:before,.visual:after{content:"";position:absolute;border:1px solid #d7edc22c;border-radius:50%;width:370px;height:370px;transform:rotate(-24deg) scaleY(.55)}.visual:after{width:500px;height:500px}.fish-art{position:relative;z-index:1;width:82%;filter:drop-shadow(0 20px 28px #071a1a88)}.visual-label{position:absolute;z-index:2;bottom:22px;left:24px;color:#e9f0df;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}.bubble{position:absolute;border:1px solid #e4f2d566;border-radius:50%;width:9px;height:9px;right:18%;top:20%}.bubble.b2{width:5px;height:5px;right:26%;top:34%}.bubble.b3{width:13px;height:13px;right:10%;top:42%}
+    section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.kicker{color:#719076;text-transform:uppercase;font-size:.75rem;font-weight:800;letter-spacing:.14em}.section-head h2{font-size:clamp(2rem,4vw,3.25rem);letter-spacing:-.06em;line-height:1.05;margin:8px 0 0}.section-head p{max-width:390px;color:var(--muted);margin:0}.catalog{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fish-card{background:white;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:.2s}.fish-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.fish-photo{height:205px;display:grid;place-items:center;background:linear-gradient(140deg,#dce9d5,#edf0df);position:relative;overflow:hidden}.fish-photo.blue{background:linear-gradient(140deg,#d4e4e8,#e9eee7)}.fish-photo.gold{background:linear-gradient(140deg,#f3e2c7,#e8edda)}.fish-photo span{font-size:3.3rem;filter:drop-shadow(0 8px 9px #1a3b3325)}.photo-hint{position:absolute;bottom:12px;left:13px;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:#456258;background:#ffffffb8;padding:5px 9px;border-radius:20px}.fish-info{padding:19px}.fish-info h3{margin:0 0 5px;font-size:1.15rem;letter-spacing:-.03em}.fish-info p{margin:0;color:var(--muted);font-size:.88rem}.fish-meta{display:flex;justify-content:space-between;align-items:center;margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:.8rem}.status{color:#537b57;font-weight:750}.enquire{font-weight:800;text-decoration:underline;text-underline-offset:3px}.notice{margin-top:18px;color:#77847c;font-size:.82rem}
+    .story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center}.story-art{min-height:320px;border-radius:28px;background:linear-gradient(145deg,#d9e7d2,#f0e8d5);display:grid;place-items:center;font-size:7rem}.story h2{font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.04;letter-spacing:-.06em;margin:10px 0 18px}.story p{color:var(--muted)}.pill-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.pill{background:#e8eee3;color:#47614d;border-radius:99px;padding:7px 12px;font-size:.78rem;font-weight:700}
+    .contact{background:var(--ink);color:#f6f5ef}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.contact h2{font-size:clamp(2.2rem,4vw,3.7rem);letter-spacing:-.06em;line-height:1.02;margin:10px 0 18px}.contact p{color:#c0cec4}.contact .kicker{color:#b8d39f}.contact-details{margin-top:30px;display:grid;gap:12px;color:#e5eee3}.contact-form{background:#f8f8f1;color:var(--ink);border-radius:24px;padding:25px}.contact-form label{display:block;font-weight:750;font-size:.83rem;margin:0 0 6px}.contact-form input,.contact-form textarea{width:100%;border:1px solid #dce3d9;background:white;border-radius:12px;padding:12px 13px;margin-bottom:15px;outline:none}.contact-form input:focus,.contact-form textarea:focus{border-color:#789d7a;box-shadow:0 0 0 3px #789d7a22}.contact-form textarea{min-height:105px;resize:vertical}.contact-form .btn{width:100%}.form-help{font-size:.75rem;color:#78847b;margin:10px 0 0}.footer{padding:24px 0;color:#8a9990;font-size:.8rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:var(--ink)}
+    @media(max-width:760px){.wrap{width:min(100% - 30px,540px)}.nav{height:68px}.navlinks{display:none;position:absolute;top:65px;left:15px;right:15px;background:white;padding:18px;border-radius:16px;box-shadow:var(--shadow);z-index:5;flex-direction:column;align-items:stretch;gap:14px}.navlinks.open{display:flex}.navcta{display:none}.menu{display:block}.hero{padding:26px 0 48px}.hero-grid,.story-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.hero h1{font-size:3.55rem}.visual{min-height:330px}.section-head{display:block}.section-head p{margin-top:14px}.cards{grid-template-columns:1fr}.fish-photo{height:220px}section{padding:55px 0}.story-art{min-height:230px}.contact-grid{gap:25px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home" aria-label="Guppy World home"><span class="mark">〰</span><span>guppy world</span></a>
+    <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#guppies">Our guppies</a><a href="#about">Our story</a><a href="#contact">Contact</a></nav>
+    <a class="navcta" href="#contact">Make an enquiry ↗</a>
+    <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><div class="eyebrow"><span class="dot"></span> Home-raised guppies · Dhaka</div>
+        <h1>A little more <em>colour</em> in your world.</h1>
+        <p class="lead">Meet the little swimmers of Guppy World. We raise our guppies with care and share updates on the fish currently available.</p>
+        <div class="hero-actions"><a class="btn" href="#guppies">Explore the guppies <span aria-hidden="true">→</span></a><a class="btn secondary" href="#about">Our story</a></div>
+        <p class="hero-note">Based in Bashundhara R/A, Dhaka · Enquiry before collection</p>
+      </div>
+      <div class="visual" aria-label="Decorative aquarium-inspired artwork"><span class="bubble"></span><span class="bubble b2"></span><span class="bubble b3"></span>
+        <svg class="fish-art" viewBox="0 0 520 330" role="img" aria-label="Illustration of a colourful guppy">
+          <defs><linearGradient id="tail" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e8b36d"/><stop offset=".48" stop-color="#d98769"/><stop offset="1" stop-color="#9dc6a1"/></linearGradient><linearGradient id="body" x1="0" x2="1"><stop stop-color="#f2d18b"/><stop offset=".5" stop-color="#e8a56b"/><stop offset="1" stop-color="#80b5a0"/></linearGradient></defs>
+          <path d="M166 166 C92 74 40 72 26 42 C65 126 46 190 25 278 C83 246 126 228 174 193Z" fill="url(#tail)" stroke="#f4d9a7" stroke-width="3"/>
+          <path d="M177 157 C128 103 105 88 79 78 C121 132 122 190 78 240 C123 224 155 204 188 184Z" fill="#9ac3a0" opacity=".75"/>
+          <path d="M142 165 C188 105 300 99 390 151 C421 169 420 188 390 205 C300 258 188 233 142 181Z" fill="url(#body)" stroke="#f5d6a0" stroke-width="3"/>
+          <path d="M221 117 C254 64 316 63 347 121 C305 111 270 114 221 117Z" fill="#8fb9a0" stroke="#d7e6bc" stroke-width="2"/>
+          <path d="M235 222 C276 273 331 260 354 215 C311 228 278 229 235 222Z" fill="#d68a70" stroke="#f1c59b" stroke-width="2"/>
+          <path d="M265 125 C283 150 289 192 265 222" fill="none" stroke="#fff1ce" stroke-width="4" opacity=".55"/>
+          <path d="M179 164 C224 147 276 147 326 167" fill="none" stroke="#fff4d9" stroke-width="5" opacity=".55"/>
+          <circle cx="370" cy="166" r="8" fill="#102b2a"/><circle cx="372" cy="163" r="2.5" fill="white"/>
+          <path d="M393 179 Q410 188 419 177" fill="none" stroke="#a56c56" stroke-width="3" stroke-linecap="round"/>
+          <path d="M177 173 Q210 196 245 206" fill="none" stroke="#fff4d9" stroke-width="3" opacity=".7"/>
+        </svg>
+        <div class="visual-label">Small fish · Big personality</div>
+      </div>
+    </div></section>
+
+    <section class="catalog" id="guppies"><div class="wrap">
+      <div class="section-head"><div><div class="kicker">The little residents</div><h2>Meet our guppies.</h2></div><p>Every fish is different. Check the listing details and ask us to confirm current availability before making arrangements.</p></div>
+      <div class="cards">
+        <article class="fish-card"><div class="fish-photo"><span>🐠</span><div class="photo-hint">Replace with your fish photo</div></div><div class="fish-info"><h3>[Guppy variety 01]</h3><p>Add the real colour, age, approximate size and any useful care notes here.</p><div class="fish-meta"><span class="status">Ask for availability</span><a class="enquire" href="#contact" data-fish="Guppy variety 01">Enquire ↗</a></div></div></article>
+        <article class="fish-card"><div class="fish-photo blue"><span>🐟</span><div class="photo-hint">Replace with your fish photo</div></div><div class="fish-info"><h3>[Guppy variety 02]</h3><p>Add the real colour, age, approximate size and any useful care notes here.</p><div class="fish-meta"><span class="status">Ask for availability</span><a class="enquire" href="#contact" data-fish="Guppy variety 02">Enquire ↗</a></div></div></article>
+        <article class="fish-card"><div class="fish-photo gold"><span>🐠</span><div class="photo-hint">Replace with your fish photo</div></div><div class="fish-info"><h3>[Guppy variety 03]</h3><p>Add the real colour, age, approximate size and any useful care notes here.</p><div class="fish-meta"><span class="status">Ask for availability</span><a class="enquire" href="#contact" data-fish="Guppy variety 03">Enquire ↗</a></div></div></article>
+      </div>
+      <p class="notice">These are starter placeholders, not confirmed stock or prices. Replace them with your own fish photos and accurate details before publishing.</p>
+    </div></section>
+
+    <section id="about"><div class="wrap story-grid"><div class="story-art" aria-hidden="true">🌿🐟</div><div class="story"><div class="kicker">A small home-breeding project</div><h2>Raised with care, one generation at a time.</h2><p>Guppy World is a home-based guppy project in Dhaka. This space is where we share our fish, breeding updates and the little details that make keeping guppies enjoyable.</p><p>We believe clear information matters: photos should show the actual fish, and availability should always be confirmed before collection.</p><div class="pill-row"><span class="pill">Home-raised</span><span class="pill">Actual fish photos</span><span class="pill">Dhaka, Bangladesh</span></div></div></div></section>
+
+    <section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="kicker">Say hello</div><h2>Found a fish you like?</h2><p>Send an enquiry and tell us which guppy caught your eye. We'll confirm current availability and discuss collection arrangements.</p><div class="contact-details"><div>📍 Bashundhara R/A, Dhaka</div><div>🐟 Enquiry first · Availability confirmation required</div></div></div>
+      <form class="contact-form" id="enquiryForm"><label for="name">Your name</label><input id="name" name="name" placeholder="Name" required /><label for="fish">Which fish are you asking about?</label><input id="fish" name="fish" placeholder="Guppy variety / listing" required /><label for="message">Your message</label><textarea id="message" name="message" placeholder="How many are you interested in? Any questions?"></textarea><button class="btn" type="submit">Copy enquiry message ↗</button><p class="form-help" id="formHelp">This copies a ready-to-send message. Paste it into your preferred messaging app to contact us.</p></form>
+    </div></section>
+  </main>
+  <footer class="wrap footer"><span><strong>guppy world</strong> · Home-raised guppies</span><span>Made with care in Dhaka · © <span id="year"></span> Guppy World</span></footer>
+  <script>
+    const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+    document.querySelectorAll('[data-fish]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('fish').value=a.dataset.fish}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    document.getElementById('enquiryForm').addEventListener('submit',async e=>{
+      e.preventDefault();const d=new FormData(e.currentTarget);
+      const msg=`Hello Guppy World!\nMy name: ${d.get('name')}\nInterested in: ${d.get('fish')}\nMessage: ${d.get('message')||'Please share availability and details.'}\n\nPlease let me know the current availability and collection arrangements.`;
+      const help=document.getElementById('formHelp');
+      try{await navigator.clipboard.writeText(msg);help.textContent='Enquiry copied! Paste it into Messenger or your preferred messaging app.';}
+      catch{help.textContent='Clipboard access is unavailable in this preview. Please copy your details manually and message the page.';}
+    });
+  </script>
+</body>
+</html>
